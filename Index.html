@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="Posr" action="/sh"><button class="show" type="submit" value="добавить">Загрузить</button></form>
+    <H3> описание предметной области</H3>
+
+            <table border="1">
+                <tr>
+                    <th> Id</th>
+                    <th>Описание </th>
+            </tr>
+                 {% for DesSubArea in sub %}
+            <tr>
+                <td>{{ DesSubArea.id_des }}</th>
+                <th>{{ DesSubArea.des }}</th>
+            </tr>
+                {% endfor %}
+        </table>
+
+
+
+</body>
